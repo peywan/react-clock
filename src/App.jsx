@@ -1,24 +1,17 @@
 // Importera React och hooks
 import { useState, useEffect } from "react";
+import Clock from "./components/Clock.jsx"
 
 
 const App = () => {
-    // Skapa en state variabel för tiden
-    const [time, setTime] = useState(new Date().toLocaleTimeString());
-
-    // Använd useEffect för att sätta upp setInterval
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setTime(new Date().toLocaleTimeString());
-        }, 1000);
-        return () => clearInterval(interval)
-    }, []);
 
     return (
         <>
             {/*returnera JSX som visar tiden*/}
-            <h1>your locale time zone time by peywan with react</h1>
-            <h5>the current time is: {time}</h5>
+            <h1>your locale time zone time by Peywan with react</h1>
+            <Clock city="Stockholm" timeZone="Europe/Stockholm"/>
+            <Clock city="Tokyo" timeZone="Asia/Tokyo"/>
+            <Clock city="New York" timeZone="America/New_York"/>
         </>
     )
 }
