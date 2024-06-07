@@ -19,8 +19,9 @@ const Timer = ({startingTime}) => {
     return (
 
         <>
-            <h1>Timer component</h1>
-            <p>{minutes}:{seconds < 10 ? `0${seconds}` : seconds}</p>
+            <h5>Timer component</h5>
+            <h5
+            >{minutes}:{seconds < 10 ? `0${seconds}` : seconds}</h5>
         </>
     )
 }

@@ -8,13 +8,13 @@ const App = () => {
 
     return (
         <>
-            {/*returnera JSX som visar tiden*/}
             <h1>your locale time zone time by Peywan with react</h1>
             <Clock city="Stockholm" timeZone="Europe/Stockholm"/>
             <Clock city="Tokyo" timeZone="Asia/Tokyo"/>
             <Clock city="New York" timeZone="America/New_York"/>
-            <Timer startingTime={10} /> {/* 50 minutes */}
-            <Timer startingTime={600} /> {/* 10 minutes */}
+            {/*returnera JSX som visar tiden*/}
+            <Timer startingTime={200}/> {/* 50 minutes */}
+            <Timer startingTime={600}/> {/* 10 minutes */}
         </>
     )
 }
